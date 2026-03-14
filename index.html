@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Encuentro | Consultora de Higiene y Seguridad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(10, 31, 28, 0.7), rgba(10, 31, 28, 0.85)), 
+                        url('https://images.unsplash.com/photo-1579975096649-e773152b04cb?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .accent-border {
+            border-left: 4px solid #f97316;
+        }
+
+        .bg-mining-dark {
+            background-color: #0a1f1c;
+        }
+
+        .text-mining-orange {
+            color: #f97316;
+        }
+
+        .btn-primary {
+            background-color: #f97316;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #ea580c;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-mining-dark/95 backdrop-blur-sm text-white border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-mining-orange rounded-full flex items-center justify-center">
+                        <i class="fas fa-mountain text-white"></i>
+                    </div>
+                    <span class="font-extrabold text-xl tracking-tighter uppercase">Punto de <span class="text-mining-orange">Encuentro</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+                    <a href="#inicio" class="hover:text-mining-orange transition">Inicio</a>
+                    <a href="#servicios" class="hover:text-mining-orange transition">Servicios</a>
+                    <a href="#experiencia" class="hover:text-mining-orange transition">Experiencia</a>
+                    <a href="#equipo" class="hover:text-mining-orange transition">Nosotros</a>
+                    <a href="#contacto" class="bg-mining-orange px-4 py-2 rounded text-white hover:bg-orange-600 transition">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white"><i class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <span class="inline-block px-4 py-1 bg-mining-orange text-xs font-bold uppercase tracking-widest rounded-full mb-6">Consultora Calingastina de Higiene y Seguridad</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Seguridad en el Camino, <br>
+                <span class="text-mining-orange">Valor en las Personas</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-300 font-light max-w-2xl mx-auto">
+                Especialistas en minería y obras de alta complejidad en San Juan. Combinamos rigor técnico con conocimiento profundo del territorio.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg shadow-lg">Iniciar Proyecto</a>
+                <a href="#experiencia" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-mining-dark transition">Nuestra Experiencia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Trust -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-extrabold text-mining-dark">+10</p>
+                <p class="text-gray-500 uppercase text-xs tracking-widest mt-2">Años de Trayectoria</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold text-mining-dark">100%</p>
+                <p class="text-gray-500 uppercase text-xs tracking-widest mt-2">Cumplimiento Legal</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold text-mining-dark">San Juan</p>
+                <p class="text-gray-500 uppercase text-xs tracking-widest mt-2">Base Operativa</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold text-mining-dark">ISO</p>
+                <p class="text-gray-500 uppercase text-xs tracking-widest mt-2">Expertos en Normas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us? Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop" alt="Obra de ingeniería" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">Raíces Locales con <br><span class="text-mining-orange">Visión de Futuro</span></h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Nacemos del suelo de <strong>Calingasta</strong>. Nuestra diferencia radica en la cercanía genuina con el trabajador y el conocimiento de la geografía local, factores críticos para el éxito de cualquier operación minera o civil.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-orange-100 p-2 rounded text-mining-orange"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold">Pacto de Cuidado Mutuo</h4>
+                                <p class="text-gray-500">Vamos más allá del requisito legal: protegemos la vida.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-orange-100 p-2 rounded text-mining-orange"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold">Respuesta Inmediata</h4>
+                                <p class="text-gray-500">Presencia real en Calingasta para atención directa en obra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="servicios" class="py-24 bg-mining-dark text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Servicios Estratégicos</h2>
+                <div class="w-24 h-1 bg-mining-orange mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white/5 p-8 rounded-2xl border border-white/10 transition-all">
+                    <div class="text-mining-orange text-3xl mb-6"><i class="fas fa-file-shield"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Gestión de Seguridad</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>• Planes de Seguridad integrales</li>
+                        <li>• Matriz IPER (Identificación de Peligros)</li>
+                        <li>• Auditorías y Cultura Preventiva</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card bg-white/5 p-8 rounded-2xl border border-white/10 transition-all">
+                    <div class="text-mining-orange text-3xl mb-6"><i class="fas fa-users-gear"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Capacitación y ART</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>• Inducciones de Seguridad en Obra</li>
+                        <li>• Gestión Documental ART</li>
+                        <li>• Programas de formación técnica</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card bg-white/5 p-8 rounded-2xl border border-white/10 transition-all">
+                    <div class="text-mining-orange text-3xl mb-6"><i class="fas fa-certificate"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Certificaciones ISO</h3>
+                    <p class="text-gray-400 text-sm">Asesoramiento experto para alcanzar y mantener certificaciones:</p>
+                    <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="bg-mining-orange/20 text-mining-orange text-[10px] px-2 py-1 rounded">ISO 9001</span>
+                        <span class="bg-mining-orange/20 text-mining-orange text-[10px] px-2 py-1 rounded">ISO 14001</span>
+                        <span class="bg-mining-orange/20 text-mining-orange text-[10px] px-2 py-1 rounded">ISO 45001</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Portfolio -->
+    <section id="experiencia" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2">Historial de Éxito</h2>
+                    <p class="text-gray-500">Participación técnica en los proyectos más ambiciosos de la región.</p>
+                </div>
+                <div class="hidden md:block">
+                    <span class="text-sm font-bold text-mining-dark uppercase tracking-widest">Nuestra Huella en San Juan</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl h-80">
+                    <img src="https://images.unsplash.com/photo-1517089534706-3d5ebb6300da?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-mining-dark via-transparent to-transparent opacity-90 p-8 flex flex-col justify-end">
+                        <h4 class="text-white text-xl font-bold">Dique Punta Negra</h4>
+                        <p class="text-mining-orange text-sm">Infraestructura Hidráulica</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl h-80">
+                    <img src="https://images.unsplash.com/photo-1533604312847-97ff96f8c7e1?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-mining-dark via-transparent to-transparent opacity-90 p-8 flex flex-col justify-end">
+                        <h4 class="text-white text-xl font-bold">Dique El Tambolar</h4>
+                        <p class="text-mining-orange text-sm">Gestión de Seguridad</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-xl h-80">
+                    <img src="https://images.unsplash.com/photo-1574684519106-96a60ba42c52?q=80&w=1935&auto=format&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-mining-dark via-transparent to-transparent opacity-90 p-8 flex flex-col justify-end">
+                        <h4 class="text-white text-xl font-bold">Exploración Diamantina</h4>
+                        <p class="text-mining-orange text-sm">Minería de Montaña</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gray-50 p-8 rounded-2xl border-l-8 border-mining-orange">
+                <h4 class="text-xl font-bold mb-4">Especialidades Adicionales</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-sm text-gray-600 font-medium">• Diques de Cola</div>
+                    <div class="text-sm text-gray-600 font-medium">• Mensuras Mineras</div>
+                    <div class="text-sm text-gray-600 font-medium">• Montajes Industriales</div>
+                    <div class="text-sm text-gray-600 font-medium">• Campamentos Mineros</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="equipo" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-16">Liderazgo Técnico</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-24 h-24 bg-mining-dark rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-user-tie text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Borquez José Luis</h3>
+                    <p class="text-mining-orange font-medium">Lic. Higiene y Seguridad</p>
+                    <p class="mt-4 text-gray-500 text-sm">Co-fundador especializado en gestión operativa de grandes infraestructuras.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-24 h-24 bg-mining-dark rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-user-shield text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Bustos Cristian</h3>
+                    <p class="text-mining-orange font-medium">Esp. Higiene y Seguridad</p>
+                    <p class="mt-4 text-gray-500 text-sm">Experto en normativas ISO y cumplimiento en proyectos mineros de alta montaña.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-mining-dark rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-12 lg:p-20 text-white">
+                    <h2 class="text-4xl font-bold mb-8">El nexo entre el <br><span class="text-mining-orange">progreso y la comunidad.</span></h2>
+                    <p class="text-gray-400 mb-12">Estamos listos para elevar el estándar de seguridad en su próximo proyecto. Contáctenos para una auditoría inicial.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-mining-orange">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">WhatsApp Consultas</p>
+                                <p class="font-bold">2645178683 | 2644039438</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-mining-orange">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">Ubicación</p>
+                                <p class="font-bold">Barreal / Tamberias - Calingasta, SJ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 bg-white p-12 lg:p-20">
+                    <form onsubmit="event.preventDefault(); document.getElementById('success-msg').style.display='block';">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Nombre Completo</label>
+                                <input type="text" class="w-full border-b-2 border-gray-100 py-2 focus:border-mining-orange outline-none transition" placeholder="Ej. Juan Pérez" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Empresa</label>
+                                <input type="text" class="w-full border-b-2 border-gray-100 py-2 focus:border-mining-orange outline-none transition" placeholder="Nombre de su compañía">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Email Corporativo</label>
+                            <input type="email" class="w-full border-b-2 border-gray-100 py-2 focus:border-mining-orange outline-none transition" placeholder="email@empresa.com" required>
+                        </div>
+                        <div class="mb-10">
+                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">¿Cómo podemos ayudar?</label>
+                            <textarea rows="4" class="w-full border-b-2 border-gray-100 py-2 focus:border-mining-orange outline-none transition resize-none" placeholder="Cuéntenos sobre su proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full py-4 text-white font-bold rounded-xl shadow-lg">Enviar Solicitud</button>
+                        <div id="success-msg" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-center font-medium">
+                            ¡Mensaje enviado con éxito! Nos contactaremos pronto.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-mining-dark rounded-full flex items-center justify-center">
+                    <i class="fas fa-mountain text-white text-xs"></i>
+                </div>
+                <span class="font-extrabold text-lg uppercase">Punto de <span class="text-mining-orange">Encuentro</span></span>
+            </div>
+            <p class="text-gray-400 text-sm">© 2026 Consultora Punto de Encuentro. Todos los derechos reservados.</p>
+            <div class="flex gap-6 text-xl text-gray-400">
+                <a href="#" class="hover:text-mining-dark"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-mining-dark"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/2645178683" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
